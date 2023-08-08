@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaSun, FaMoon} from 'react-icons/fa';
+import { MdOutlineDarkMode, MdDarkMode } from "react-icons/md";
 import { useState, useEffect } from 'react';
 import '../Styles/button.css';
 
@@ -18,8 +18,8 @@ const Toggle = () => {
     return (
         <div>
         <button className='toogle-button' onClick={ToogleChange}>
-           {darkMode ? <FaSun /> : <FaMoon /> } 
-           {darkMode ? <span>Light Mode</span> : <span>Dark Mode</span>}
+           {darkMode ? <MdOutlineDarkMode /> : <MdDarkMode/> } 
+           {darkMode ? <span>Dark Mode</span> : <span>Light Mode</span>}
          
         </button>
 

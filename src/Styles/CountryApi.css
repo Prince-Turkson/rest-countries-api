@@ -1,0 +1,7 @@
+.countryContent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    /* background: red; */
+    margin: auto 48px;
+}

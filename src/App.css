@@ -11,3 +11,7 @@ body{
     font-style: normal;
     width: 100%;
 }
+
+img{
+    max-width: 100%;
+}

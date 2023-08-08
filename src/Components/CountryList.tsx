@@ -1,9 +1,10 @@
 import React from 'react';
 
-const CountryList = () => {
+
+function CountryList() {
   return (
     <div>
-      
+        
     </div>
   );
 }
