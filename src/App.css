@@ -5,13 +5,19 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background: #FAFAFA;
     font-family: "Nunito Sans", sans-serif;
     font-style: normal;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 img{
     max-width: 100%;
+}
+
+.dark-mode body{
+    background: #202C36;
 }

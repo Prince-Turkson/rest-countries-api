@@ -1,3 +1,4 @@
+// CountryApi.tsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "../Styles/CountryApi.css";
@@ -10,7 +11,12 @@ interface Country {
   capital: string;
 }
 
-const CountryInfo: React.FC = () => {
+interface CountryApiProps {
+  searchQuery: string;
+  selectedRegion: string;
+}
+
+const CountryApi: React.FC<CountryApiProps> = ({ searchQuery, selectedRegion }) => {
   const [countries, setCountries] = useState<Country[]>([]);
 
   useEffect(() => {
@@ -23,26 +29,34 @@ const CountryInfo: React.FC = () => {
       });
   }, []);
 
+  const filteredCountries = countries.filter(country => {
+    if (selectedRegion !== 'all' && country.region !== selectedRegion) {
+      return false;
+    }
+    if (searchQuery && !country.name.toLowerCase().includes(searchQuery.toLowerCase())) {
+      return false;
+    }
+    return true;
+  });
+
   return (
     <div>
-    
-      <div className = "countryContent">
-        {countries.map(country => (
-          <div key={country.name}>
-            <div className='countryFlag'>
-            <img src={country.flag} alt={`${country.name} Flag`} />
+      <div className="countryContent">
+        {filteredCountries.map(country => (
+          <div key={country.name} className='country-element'>
+            <div className='count'>
+              <div className='countryFlag'>
+                <img src={country.flag} alt={`${country.name} Flag`} />
+              </div>
+              <div className='countryCard'>
+                <h4>{country.name}</h4>
+                <div className='details'>
+                  <p> <strong>Region:</strong> {country.region}</p>
+                  <p><strong>Population: </strong>{country.population}</p>
+                  <p><strong>Capital:</strong> {country.capital}</p>
+                </div>
+              </div>
             </div>
-         
-            <div>
-            <h4>Name: {country.name}</h4>
-            <div>
-            <p>Region: {country.region}</p>
-            <p>Population: {country.population}</p>
-            <p>Capital: {country.capital}</p>
-            </div>
-           
-            </div>
-           
           </div>
         ))}
       </div>
@@ -50,4 +64,5 @@ const CountryInfo: React.FC = () => {
   );
 };
 
-export default CountryInfo;
+
+export default CountryApi;

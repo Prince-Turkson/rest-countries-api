@@ -1,0 +1,10 @@
+.second-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 80px;
+}
+
+.dark-mode .second-item{
+    background: #202C36;
+}

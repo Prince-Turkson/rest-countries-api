@@ -20,3 +20,13 @@ option{
     box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
     border: none;
 }
+
+.dark-mode select{
+    color:#FFF;
+    background: #2B3844;
+}
+
+.dark-mode option{
+    color: #FFF;
+    background: #2B3844;
+}

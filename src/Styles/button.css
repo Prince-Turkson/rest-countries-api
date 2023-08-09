@@ -1,4 +1,4 @@
-.toogle-button{
+.toggle-button{
     width: 120px;
     display: flex;
     align-items:center ;
@@ -9,3 +9,8 @@
     border: none;
     cursor: pointer;
 }
+
+.toggle-button:focus{
+    outline: none;
+}
+

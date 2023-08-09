@@ -1,31 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { MdOutlineDarkMode, MdDarkMode } from "react-icons/md";
-import { useState, useEffect } from 'react';
 import '../Styles/button.css';
 
-
 const Toggle = () => {
-    const [darkMode, setDarkMode] = useState(false)
-    const ToogleChange = () =>{
-        setDarkMode(prevDarkMode => !prevDarkMode)
-    }
-    
-    useEffect(() => {
-        
-        document.documentElement.classList.toggle('dark-mode', darkMode);
-      }, [darkMode]);
-    
-    return (
-        <div>
-        <button className='toogle-button' onClick={ToogleChange}>
-           {darkMode ? <MdOutlineDarkMode /> : <MdDarkMode/> } 
-           {darkMode ? <span>Dark Mode</span> : <span>Light Mode</span>}
-         
-        </button>
+  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  const [darkMode, setDarkMode] = useState(savedDarkMode);
 
+  const toggleChange = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem('darkMode', newDarkMode.toString());
+  };
 
-        </div>
-    )
-}
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark-mode', darkMode);
+  }, [darkMode]);
+
+  return (
+    <div>
+      <button className='toggle-button' onClick={toggleChange}>
+        {darkMode ? <MdOutlineDarkMode /> : <MdDarkMode />} 
+        {darkMode ? <span>Dark Mode</span> : <span>Light Mode</span>}
+      </button>
+    </div>
+  );
+};
 
 export default Toggle;
