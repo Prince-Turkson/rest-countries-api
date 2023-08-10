@@ -1,0 +1,22 @@
+.CountryDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CountryDetailsFlag img{
+    width: 559.715px;
+    height: 483.169px;
+    flex-shrink: 0;
+}
+
+.mainFlex{
+    display: flex;
+
+    
+
+}
+
+.secondFlex{
+    
+}

@@ -4,7 +4,13 @@
     gap: 67px;
     place-items: center;
     margin: 48px 80px;
+    
    
+}
+
+Link{
+  text-decoration: none;
+
 }
 
 
@@ -36,16 +42,19 @@
     line-height: 26px; 
     padding-top: 24px;
     padding-left: 24px;
+ 
     }
 
     
     
   .countryCard p{
+    text-decoration: none;
     height: 32px;
   }
 
 
   .details{
+    
     padding-top: 16px;
     padding-left: 24px;
   }
@@ -64,5 +73,11 @@
   .dark-mode .countryCard h4{
     color: #fff;
   }
-
+.countryLinks{
+  text-decoration: none;
+}
   
+.details p{
+  color: black;
+  font-family: "Nunito Sans", sans-serif;;
+}

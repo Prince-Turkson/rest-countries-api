@@ -1,22 +1,19 @@
-import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Nav from './Components/Nav';
-import './App.css';
+import CountryApi from './Components/CountryApi'; 
+import CountryDetails from './Pages/CountryDetails';
 import HomePage from './Pages/HomePage';
-import CountryApi from './Components/CountryApi';
+import './Styles/App.css'
+import Nav from './Components/Nav';
 
 const App: React.FC = () => {
-  const [selectedRegion, setSelectedRegion] = useState<string>('all');
-  const [searchQuery, setSearchQuery] = useState<string>('');
-
   return (
     <Router>
-      <div className="App">
+      <div className='App.css'>
         <Nav />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/countries" element={<CountryApi searchQuery={searchQuery} selectedRegion={selectedRegion} />} /> 
-        </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/country/:countryName" element={<CountryDetails />} />
+      </Routes>
       </div>
     </Router>
   );
