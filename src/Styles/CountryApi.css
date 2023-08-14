@@ -77,7 +77,25 @@ Link{
   text-decoration: none;
 }
   
+
+.dark-mode .details p{ 
+  color: #fff;
+}
 .details p{
   color: black;
   font-family: "Nunito Sans", sans-serif;;
+}
+
+.dark-mode .CountryDetailsName{
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 320px){
+
+  .countryContent{
+    grid-template-columns: 1fr;
+
+  }
+ 
 }

@@ -44,3 +44,16 @@ input {
     color: #fff;
     background: #2B3844;
   }
+
+  
+@media only screen and (max-width: 480px) and (min-width: 320px){
+
+.SearchContentDetails{
+  width: 343px;
+}
+
+input{
+  width: 100%;
+}
+
+}

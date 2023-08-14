@@ -1,22 +1,98 @@
 .CountryDetails{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    /* margin-top: 50px; */
+    margin: 5.125rem;
+   
+   
+}
+
+.CountryDetailsFlag{
+  padding-left: 80px;
 }
 
 .CountryDetailsFlag img{
     width: 559.715px;
-    height: 483.169px;
+    height: 425px;
     flex-shrink: 0;
+    border-radius: .5rem;
+}
+
+.CountryDetailsName{
+    color: #111517;
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 1.438rem;
+    margin-left: 1.7rem;
+}
+
+.CountryFlex{
+   
+    margin-right: 82px;
+}
+
+.mainFlex{
+    padding: 2.2rem;
+    gap: 4.4rem;
+}
+
+.secondFlex{
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.thirdFlex{
+    font-family: 'Nunito Sans', 'sans-serif';
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem; 
 }
 
 .mainFlex{
     display: flex;
-
+   
     
 
 }
 
-.secondFlex{
-    
+
+
+.dark-mode .CountryDetailsNative{
+    color: #fff;
 }
+
+.dark-mode .CountryDetailsPopulation{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsRegion{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsSub{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsCapitail{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsDomain{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsCurrency{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsLanguage{
+    color: #fff;
+}
+
+.dark-mode .backArrow svg{
+    stroke: #fff;
+}
+

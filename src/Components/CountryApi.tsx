@@ -54,7 +54,7 @@ const CountryApi: React.FC<CountryApiProps> = ({ searchQuery, selectedRegion }) 
                   <h4>{country.name}</h4>
                   <div className='details'>
                     <p><strong>Region:</strong> {country.region}</p>
-                    <p><strong>Population:</strong> {country.population}</p>
+                    <p><strong>Population:</strong> {country.population.toLocaleString()}</p>
                     <p><strong>Capital:</strong> {country.capital}</p>
                   </div>
                 </div>

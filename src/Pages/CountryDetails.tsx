@@ -36,7 +36,7 @@ const CountryDetails: React.FC = () => {
   }, [countryName]);
 
   if (!countryName) {
-    return <div>Country name is missing.</div>;
+    return <div><h1>Country name is missing.</h1></div>;
   }
 
   if (!countryDetails) {
@@ -62,13 +62,13 @@ const CountryDetails: React.FC = () => {
                 <p><strong>Native Name:</strong>{countryDetails.nativeName}</p>
             </div>
             <div className="CountryDetailsPopulation">
-            <p><strong>Population:</strong> {countryDetails.population}</p>
+            <p><strong>Population:</strong> {countryDetails.population.toLocaleString()}</p>
             </div>
               <div className="CountryDetailsRegion">
               <p><strong>Region:</strong> {countryDetails.region}</p>
               </div>
                <div className="CountryDetailsSub">
-               <p><strong>Sub Region</strong>{countryDetails.subregion}</p>
+               <p><strong>Sub Region:</strong>{countryDetails.subregion}</p>
                </div>
                <div className="CountryDetailsCapitail">
                <p><strong>Capital:</strong> {countryDetails.capital}</p>
@@ -82,23 +82,27 @@ const CountryDetails: React.FC = () => {
                <p><strong>Currencies:</strong>{countryDetails.currencies.map(currency => currency.code).join(", ")}</p>
                </div>
               <div className="CountryDetailsLanguage">
-                <p><strong>Language</strong>{countryDetails.languages.map(language => language.name).join(", ")}</p>
+                <p><strong>Language:</strong>{countryDetails.languages.map(language => language.name).join(", ")}</p>
               </div>
                    </div>
-
-                    </div>        
                    
 
-                
+                    </div>        
+           
+                {/* borders */}
            
 
                
               </div>
 
+
               
+ 
+
+            
             
         </div>
-         
+        
 
       
     </div>
