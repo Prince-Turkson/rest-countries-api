@@ -18,7 +18,13 @@ h1{
     color: #fff;
 }
 
+.dark-mode h1{
+    color: #fff;
+}
 
+.dark-mode span{
+    color: #fff;
+}
 
 @media only screen and (max-width: 480px) and (min-width: 375px){
 
