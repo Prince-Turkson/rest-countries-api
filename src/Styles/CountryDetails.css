@@ -1,16 +1,15 @@
-.CountryDetails{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* margin-top: 50px; */
-    margin: 5.125rem;
-   
-   
+.main-element{
+   display: flex;
+   flex-direction: column;
+   margin: 60px 0px 0px 80px;
 }
 
-.CountryDetailsFlag{
-  padding-left: 80px;
+.CountryDetails{
+  display: flex;
+   gap: 144px;
+   margin-top: 50px;
 }
+
 
 .CountryDetailsFlag img{
     width: 559.715px;
@@ -24,17 +23,17 @@
     font-family: Nunito Sans;
     font-size: 32px;
     font-weight: 800;
-    margin-bottom: 1.438rem;
-    margin-left: 1.7rem;
 }
 
 .CountryFlex{
-   
-    margin-right: 82px;
+    width: 584px;
+    height: 323px;
+    flex-shrink: 0;
 }
 
 .mainFlex{
-    padding: 2.2rem;
+    display: flex;
+    margin-top: 23px;
     gap: 4.4rem;
 }
 
@@ -52,12 +51,6 @@
     line-height: 2rem; 
 }
 
-.mainFlex{
-    display: flex;
-   
-    
-
-}
 
 .border-country-link{
     display: inline-block;
@@ -75,7 +68,28 @@
     color: #000;
 }
 
+.bb{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 10px;
+}   
 
+.border-name{
+    display: flex;
+    width: 1005;
+    height: 24px;
+}
+
+
+.dark-mode .border-country-link{
+   color: #fff;
+   background: #2B3844;;
+}
+
+.dark-mode .border-name{
+    color: #fff;
+}
 
 .dark-mode .CountryDetailsNative{
     color: #fff;
@@ -111,5 +125,52 @@
 
 .dark-mode .backArrow svg{
     stroke: #fff;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 375px){
+
+ .main-element{
+    margin: 46px 0px 0px 28px;
+    width: 375px;
+ }   
+
+.CountryDetails{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    width: 375px;
+    height: 100%;
+    gap: 0;
+}
+
+.CountryDetailsFlag{
+   max-width: 100%;
+}
+.CountryDetailsFlag img{
+ width: 319.84px;
+ height:275.92px;
+}
+
+.CountryDetailsName{
+    font-size: 22px;
+}
+
+.CountryFlex{
+    width: 335px;
+}
+
+.mainFlex{
+    display: grid;
+    flex-direction: column;
+}
+
+
+.bb{
+   
+   display: grid;
+   grid-template-columns: 1fr;
+
+}
+
 }
 

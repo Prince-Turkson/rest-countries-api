@@ -70,7 +70,7 @@ const CountryDetails: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className='main-element'>
       <BackButton />
       <div className="CountryDetails">
         <div className="CountryDetailsFlag">
@@ -111,8 +111,8 @@ const CountryDetails: React.FC = () => {
             </div>
           </div>
           <div className="border-countries">
-            <div>
-              <strong>Border Countries:</strong>
+            <div className = "bb">
+              <strong className='border-name'>Border Countries:</strong>
               <div className="border-list">
                 {borderCountries.length > 0
                   ? borderCountries.map((borderCountry) => (

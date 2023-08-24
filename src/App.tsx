@@ -8,7 +8,7 @@ import Nav from './Components/Nav';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className='App.css'>
+      <div className='App'>
         <Nav />
       <Routes>
         <Route path="/" element={<HomePage />} />

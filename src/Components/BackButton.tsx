@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const BackButton = () => {
   return (
-    <div>
+    <>
       <button className='bkBtn'>
           <Link to ='/' className="buttton-details">
                <div className="backArrow">
@@ -18,7 +18,7 @@ const BackButton = () => {
           </Link>
       </button>
       
-    </div>
+    </>
   );
 }
 
