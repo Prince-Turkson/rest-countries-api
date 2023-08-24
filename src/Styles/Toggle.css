@@ -1,0 +1,16 @@
+ .dark-mode .toggle-button{
+    background: #2B3844;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    span{
+        color: #111517;
+font-family: 'Nunito Sans', 'sans-serif';
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    }
+}

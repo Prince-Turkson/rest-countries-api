@@ -1,0 +1,176 @@
+.main-element{
+   display: flex;
+   flex-direction: column;
+   margin: 60px 0px 0px 80px;
+}
+
+.CountryDetails{
+  display: flex;
+   gap: 144px;
+   margin-top: 50px;
+}
+
+
+.CountryDetailsFlag img{
+    width: 559.715px;
+    height: 425px;
+    flex-shrink: 0;
+    border-radius: .5rem;
+}
+
+.CountryDetailsName{
+    color: #111517;
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.CountryFlex{
+    width: 584px;
+    height: 323px;
+    flex-shrink: 0;
+}
+
+.mainFlex{
+    display: flex;
+    margin-top: 23px;
+    gap: 4.4rem;
+}
+
+.secondFlex{
+    font-family: Nunito Sans;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.thirdFlex{
+    font-family: 'Nunito Sans', 'sans-serif';
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem; 
+}
+
+
+.border-country-link{
+    display: inline-block;
+     /* width: 6rem; */
+    height: 1.75rem;
+    border-radius: 0.125rem;
+    border: 0px solid #979797;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+    margin-right: 0.5rem; /* Add some spacing between links */
+    margin-bottom: 0.5rem; /* Add some spacing at the bottom */
+    padding: 0.25rem 0.5rem; /* Adjust padding as needed */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.bb{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 10px;
+}   
+
+.border-name{
+    display: flex;
+    width: 1005;
+    height: 24px;
+}
+
+
+.dark-mode .border-country-link{
+   color: #fff;
+   background: #2B3844;;
+}
+
+.dark-mode .border-name{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsNative{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsPopulation{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsRegion{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsSub{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsCapitail{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsDomain{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsCurrency{
+    color: #fff;
+}
+
+.dark-mode .CountryDetailsLanguage{
+    color: #fff;
+}
+
+.dark-mode .backArrow svg{
+    stroke: #fff;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 375px){
+
+ .main-element{
+    margin: 46px 0px 0px 28px;
+    width: 375px;
+ }   
+
+.CountryDetails{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    width: 375px;
+    height: 100%;
+    gap: 0;
+}
+
+.CountryDetailsFlag{
+   max-width: 100%;
+}
+.CountryDetailsFlag img{
+ width: 319.84px;
+ height:275.92px;
+}
+
+.CountryDetailsName{
+    font-size: 22px;
+}
+
+.CountryFlex{
+    width: 335px;
+}
+
+.mainFlex{
+    display: grid;
+    flex-direction: column;
+}
+
+
+.bb{
+   
+   display: grid;
+   grid-template-columns: 1fr;
+
+}
+
+}
+

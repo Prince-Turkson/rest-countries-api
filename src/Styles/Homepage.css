@@ -1,0 +1,21 @@
+.second-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 80px;
+}
+
+.dark-mode .second-item{
+    background: #202C36;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px){
+
+    .second-item{
+        flex-direction: column;
+        gap: 40px;
+        
+    }
+
+
+}
